@@ -1,0 +1,24 @@
+<div class="container my-5">
+    <div class="row">
+      <div class="col-md-6">
+        <img [src]="event?.imageUrl" alt="{{ event?.title }}" class="img-fluid rounded shadow-sm">
+      </div>
+      <div class="col-md-6">
+        <h2>{{ event?.title }}</h2>
+        <p class="text-muted">{{ event?.category }}</p>
+        <p>{{ event?.description }}</p>
+  
+        <div class="d-flex justify-content-start mt-4">
+          <button class="btn btn-outline-primary me-3" (click)="likeEvent()">❤️ J'aime {{ event?.likes }}</button>
+          <button class="btn btn-outline-secondary" (click)="dislikeEvent()">👎 Je n'aime pas {{ event?.dislikes }}</button>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Section de feedback (Avis des utilisateurs) -->
+    <div class="mt-5">
+      <h3>Avis des utilisateurs</h3>
+      <app-feedback [event]="event"></app-feedback> <!-- Inclure le composant de feedback -->
+    </div>
+  </div>
+  

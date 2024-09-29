@@ -1,0 +1,19 @@
+<div class="container">
+  <h4 class="mb-4">Laisser un avis</h4>
+  <form (ngSubmit)="submitFeedback()" class="mb-5">
+    <div class="mb-3">
+      <label for="comment" class="form-label">Votre commentaire</label>
+      <textarea id="comment" [(ngModel)]="comment" name="comment" class="form-control" rows="4" placeholder="Partagez votre expérience"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Envoyer</button>
+  </form>
+
+  <!-- Liste des feedbacks -->
+  <div *ngIf="event?.feedbacks?.length">
+    <h4>Commentaires des utilisateurs</h4>
+    <div *ngFor="let feedback of event?.feedbacks" class="mb-3 p-3 border rounded shadow-sm">
+      <p class="mb-1">{{ feedback.comment }}</p>
+      <small class="text-muted">L'utilisateur a donné un avis {{ feedback.like ? 'positif ❤️' : 'négatif 👎' }}</small>
+    </div>
+  </div>
+</div>
