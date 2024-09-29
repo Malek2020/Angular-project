@@ -1,0 +1,47 @@
+{
+  "events": [
+    {
+      "id": "1",
+      "title": "Fête de la musique",
+      "category": "Musique",
+      "description": "Un grand festival avec des artistes locaux.",
+      "imageUrl": "path/to/image.jpg",
+      "likes": 27,
+      "dislikes": 5,
+      "feedbacks": [
+        {
+          "userId": 1,
+          "comment": "hahaha",
+          "like": true
+        },
+        {
+          "userId": 1,
+          "comment": "jejeje",
+          "like": true
+        },
+        {
+          "userId": 1,
+          "comment": "TEST",
+          "like": true
+        }
+      ]
+    },
+    {
+      "id": 0,
+      "title": "test",
+      "category": "test",
+      "description": "test",
+      "imageUrl": "https://www.google.com/search?q=FETE+DE+LA+MUSIQUE+image+url&sca_esv=ab47502da348e488&sca_upv=1&rlz=1C1GCEU_frFR1085FR1085&udm=2&biw=1536&bih=730&ei=FcT5ZoziOOCqkdUPvdGkoQc&ved=0ahUKEwjMwJ6CiumIAxVgVaQEHb0oKXQQ4dUDCBA&uact=5&oq=FETE+DE+LA+MUSIQUE+image+url&gs_lp=Egxnd3Mtd2l6LXNlcnAiHEZFVEUgREUgTEEgTVVTSVFVRSBpbWFnZSB1cmxI9RRQGljbEXABeACQAQCYASugAYcDqgECMTC4AQPIAQD4AQGYAgigArACwgIKEAAYgAQYQxiKBcICBRAAGIAEwgIGEAAYBRgewgIGEAAYCBgewgIEEAAYHpgDAIgGAZIHATigB5gx&sclient=gws-wiz-serp#vhid=BgLPVthNIdIxyM&vssid=mosaic",
+      "likes": 0,
+      "dislikes": 0,
+      "feedbacks": []
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "username": "john",
+      "password": "123456"
+    }
+  ]
+}

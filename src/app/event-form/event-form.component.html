@@ -1,0 +1,27 @@
+<div class="container my-5">
+    <h2 class="mb-4 text-center">Ajouter un Nouvel Événement</h2>
+    <form (ngSubmit)="onSubmit()" class="mb-5">
+      <div class="mb-3">
+        <label for="title" class="form-label">Titre de l'événement</label>
+        <input type="text" class="form-control" id="title" [(ngModel)]="event.title" name="title" required>
+      </div>
+  
+      <div class="mb-3">
+        <label for="category" class="form-label">Catégorie</label>
+        <input type="text" class="form-control" id="category" [(ngModel)]="event.category" name="category" required>
+      </div>
+  
+      <div class="mb-3">
+        <label for="description" class="form-label">Description</label>
+        <textarea class="form-control" id="description" rows="3" [(ngModel)]="event.description" name="description" required></textarea>
+      </div>
+  
+      <div class="mb-3">
+        <label for="imageUrl" class="form-label">URL de l'image</label>
+        <input type="text" class="form-control" id="imageUrl" [(ngModel)]="event.imageUrl" name="imageUrl">
+      </div>
+  
+      <button type="submit" class="btn btn-primary">Ajouter l'événement</button>
+    </form>
+  </div>
+  
